@@ -1,0 +1,11 @@
+server:
+  port: 8888
+#配置本地的文件夹作为文件配置
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:D:\Users\Administrator\IdeaProjects\springcloudinaction\confsvr\src\main\resources\config\licensingservice

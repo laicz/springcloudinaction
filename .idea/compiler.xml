@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="confsvr" />
         <module name="licensing-service" />
         <module name="springcloudinaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="confsvr" target="1.8" />
       <module name="licensing-service" target="1.8" />
       <module name="springcloudinaction" target="1.6" />
     </bytecodeTargetLevel>

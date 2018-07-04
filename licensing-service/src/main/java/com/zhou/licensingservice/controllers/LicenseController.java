@@ -23,7 +23,7 @@ public class LicenseController {
      * @return
      */
     @GetMapping(value = "/{licenseId}")
-    public License getLicenses(@PathVariable("organization") String organizationId,
+    public License getLicenses(@PathVariable("organizationId") String organizationId,
                                @PathVariable("licenseId") String licenseId) {
         return new License()
                 .setId(licenseId)
