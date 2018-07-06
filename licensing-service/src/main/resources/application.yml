@@ -1,0 +1,11 @@
+server:
+  port: 8800
+
+eureka:
+  instance:
+    prefer-ip-address: true  #使用服务的IP，而不是使用服务器名称
+  client:
+    register-with-eureka: true # 向eureka进行注册
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

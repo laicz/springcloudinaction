@@ -1,0 +1,8 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false #不适用eureka服务进行注册
+  fetch-registry: false         #不在本地缓存注册信息
+  server:
+    wait-time-in-ms-when-sync-empty: 5  #在服务器接收请求之前的等待时间

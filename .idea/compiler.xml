@@ -7,13 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="confsvr" />
+        <module name="eurekasvr" />
         <module name="licensing-service" />
+        <module name="organization-service" />
         <module name="springcloudinaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="confsvr" target="1.8" />
+      <module name="eurekasvr" target="1.8" />
       <module name="licensing-service" target="1.8" />
+      <module name="organization-service" target="1.8" />
       <module name="springcloudinaction" target="1.6" />
     </bytecodeTargetLevel>
   </component>
