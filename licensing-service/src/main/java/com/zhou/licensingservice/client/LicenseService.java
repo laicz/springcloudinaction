@@ -12,6 +12,7 @@ import com.zhou.licensingservice.repository.MockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -45,6 +46,21 @@ public class LicenseService {
     public List<License> getLicenseByOrg1(String organizationId) {
         randomlyRunLong();
         return mockRepository.findByOrganizationId(organizationId);
+    }
+    @HystrixCommand(fallbackMethod = "buildFallbackLicenseList")
+    public List<License> getLicenseByOrg2(String organizationId) {
+        randomlyRunLong();
+        return mockRepository.findByOrganizationId(organizationId);
+    }
+
+    /**
+     * 注意：参数要和对某个方法进行备份的一致
+     * @param organizationId
+     * @return
+     */
+    public  List<License> buildFallbackLicenseList(String organizationId){
+        System.out.println("------------执行后备处理-------------");
+        return new ArrayList<>();
     }
 
     private void randomlyRunLong() {
