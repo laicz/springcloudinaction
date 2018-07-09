@@ -4,8 +4,13 @@
  */
 package com.zhou.licensingservice.controllers;
 
+import com.netflix.discovery.converters.Auto;
+import com.zhou.licensingservice.client.LicenseService;
 import com.zhou.licensingservice.model.License;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 2018/7/3  23:23
@@ -15,6 +20,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/v1/organizations/{organizationId}/license")
 public class LicenseController {
 
+    @Autowired
+    private LicenseService licenseService;
     /**
      * Rest风格，使用get请求方式请求资源
      *
@@ -67,5 +74,10 @@ public class LicenseController {
     public String deleteLicense(@PathVariable("organizationId") String organizationId,
                                 @PathVariable("licenseId") String licenseId) {
         return String.format("This is the delete");
+    }
+
+    @GetMapping(value = "/organization/{organizationId}")
+    public List<License> getLicense(String organization){
+        return licenseService.getLicenseByOrg1(organization);
     }
 }

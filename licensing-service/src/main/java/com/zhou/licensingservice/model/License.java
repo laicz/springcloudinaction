@@ -15,6 +15,16 @@ public class License {
     private String productName;
     private String licenseType;
 
+    public License() {
+    }
+
+    public License(String id, String organizationId, String productName, String licenseType) {
+        this.id = id;
+        this.organizationId = organizationId;
+        this.productName = productName;
+        this.licenseType = licenseType;
+    }
+
     public String getId() {
         return id;
     }

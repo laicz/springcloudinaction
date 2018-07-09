@@ -24,7 +24,7 @@ import java.util.List;
  * created by zhoumb
  */
 @Component
-@FeignClient("organazitionservice")
+//@FeignClient("organazitionservice")
 public class OrganizationDiscoveryClient {
     private static final Logger logger = LoggerFactory.getLogger(OrganizationDiscoveryClient.class);
 
