@@ -47,6 +47,12 @@ public class LicenseService {
         randomlyRunLong();
         return mockRepository.findByOrganizationId(organizationId);
     }
+
+    /**
+     * 使用hystrix实现后备模式
+     * @param organizationId
+     * @return
+     */
     @HystrixCommand(fallbackMethod = "buildFallbackLicenseList")
     public List<License> getLicenseByOrg2(String organizationId) {
         randomlyRunLong();
@@ -61,6 +67,20 @@ public class LicenseService {
     public  List<License> buildFallbackLicenseList(String organizationId){
         System.out.println("------------执行后备处理-------------");
         return new ArrayList<>();
+    }
+
+    /**
+     * 使用hystrix实现舱壁模式
+     * @param organizationId
+     * @return
+     */
+    @HystrixCommand(fallbackMethod = "buildFallbackLicenseList",threadPoolKey = "licenseByOrgThreadPool",threadPoolProperties = {
+            @HystrixProperty(name = "coreSize",value = "30"),//设置线程池大小
+            @HystrixProperty(name = "maxQueueSize",value = "10")
+    })
+    public List<License> getLicenseByOrg3(String organizationId){
+        randomlyRunLong();
+        return mockRepository.findByOrganizationId(organizationId);
     }
 
     private void randomlyRunLong() {

@@ -78,6 +78,6 @@ public class LicenseController {
 
     @GetMapping(value = "/organization/{organizationId}")
     public List<License> getLicense(String organization){
-        return licenseService.getLicenseByOrg2(organization);
+        return licenseService.getLicenseByOrg3(organization);
     }
 }
