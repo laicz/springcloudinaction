@@ -105,6 +105,7 @@ public class LicenseService {
                     @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "7000"),//在断路器跳闸之后，Hystrix允许另一个调用通过的时间数，用于检查是否恢复成功
                     @HystrixProperty(name = "metrics.rollingStats.timeInMilliseconds", value = "15000"),//监视服务调用问题的时间大小
                     @HystrixProperty(name = "metrics.rollingStats.numBuckets", value = "5")//收集统计的次数，
+
             }
     )
     public List<License> getLicenseByOrg4(String organizationId) {
