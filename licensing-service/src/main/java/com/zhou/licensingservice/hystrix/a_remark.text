@@ -1,0 +1,4 @@
+hsytrix允许开发人员重新定义自己的并发策略，可以分为以下三个步骤：
+①：定义一个自定义的Hystrix的并发策略类
+②：定义一个callable类，将UserContext类注入
+③：配置spring cloud以使用自定义的并发策略类
