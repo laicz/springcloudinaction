@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/confsvr/pom.xml" />
         <option value="$PROJECT_DIR$/eurekasvr/pom.xml" />
         <option value="$PROJECT_DIR$/organization-service/pom.xml" />
+        <option value="$PROJECT_DIR$/zuulsvr/pom.xml" />
       </list>
     </option>
   </component>

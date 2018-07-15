@@ -11,6 +11,7 @@
         <module name="licensing-service" />
         <module name="organization-service" />
         <module name="springcloudinaction" />
+        <module name="zuulsvr" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="licensing-service" target="1.8" />
       <module name="organization-service" target="1.8" />
       <module name="springcloudinaction" target="1.6" />
+      <module name="zuulsvr" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

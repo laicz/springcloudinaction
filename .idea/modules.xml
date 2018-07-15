@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/licensing-service/licensing-service.iml" filepath="$PROJECT_DIR$/licensing-service/licensing-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/organization-service/organization-service.iml" filepath="$PROJECT_DIR$/organization-service/organization-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloudinaction.iml" filepath="$PROJECT_DIR$/springcloudinaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuulsvr/zuulsvr.iml" filepath="$PROJECT_DIR$/zuulsvr/zuulsvr.iml" />
     </modules>
   </component>
 </project>
