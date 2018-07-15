@@ -14,6 +14,9 @@ zuul:
   routes:
    organizationservice: /organization/**  #配置服务名为organizationservice的服务地址
    licensingservice: /licensing/**   #配置服务名为licensing的服务地址
+   static:
+    path: /static/**
+    url: http://static-resource:8600   #配置静态资源
 management:
   security:
     enabled: false  #去除访问系统路径出现401异常
