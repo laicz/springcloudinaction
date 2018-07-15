@@ -19,7 +19,7 @@ zuul:
     #url: http://static-resource:8600   #配置静态资源
 ribbon:
   eureka:
-    enabled: false   # 在ribbon中禁用eureka支持
+    enabled: true   # 在ribbon中禁用eureka支持,设为true可以使用zuul调用ribbon服务
 static:
   ribbon:
     listOfServers: http://static-resource:8600,http://static-resource:8601
@@ -27,4 +27,19 @@ static:
 management:
   security:
     enabled: false  #去除访问系统路径出现401异常
+
+hsytrix:
+  command:
+    default:
+      execution:
+        thread:
+          timeoutInMilliseconds: 2500    #设置zuul的服务超时时间，默认的时间为1s
+    organizationservice:      #指定要设置的服务名称
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000  #定制设置某个服务的超时时间
+organizationservice:
+  ribbon:
+    ReadTimeout: 5000  #对设置时间超过5秒的要同时设置ribbon才能同时生效
 
