@@ -1,6 +1,10 @@
 server:
   port: 8800
 
+spring:
+  application:
+    name: licensingservice
+
 eureka:
   instance:
     prefer-ip-address: true  #使用服务的IP，而不是使用服务器名称
