@@ -13,4 +13,8 @@ zuul:
   prefix: /api
   routes:
    organizationservice: /organization/**  #配置服务名为organizationservice的服务地址
-   licensingservice: /licensing/**  #配置服务名为licensing的服务地址
+   licensingservice: /licensing/**   #配置服务名为licensing的服务地址
+management:
+  security:
+    enabled: false  #去除访问系统路径出现401异常
+
