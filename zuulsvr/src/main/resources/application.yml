@@ -16,7 +16,14 @@ zuul:
    licensingservice: /licensing/**   #配置服务名为licensing的服务地址
    static:
     path: /static/**
-    url: http://static-resource:8600   #配置静态资源
+    #url: http://static-resource:8600   #配置静态资源
+ribbon:
+  eureka:
+    enabled: false   # 在ribbon中禁用eureka支持
+static:
+  ribbon:
+    listOfServers: http://static-resource:8600,http://static-resource:8601
+
 management:
   security:
     enabled: false  #去除访问系统路径出现401异常
