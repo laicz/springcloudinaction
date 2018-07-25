@@ -10,6 +10,7 @@
         <module name="eurekasvr" />
         <module name="licensing-service" />
         <module name="organization-service" />
+        <module name="serial" />
         <module name="springcloudinaction" />
         <module name="zuulsvr" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="eurekasvr" target="1.8" />
       <module name="licensing-service" target="1.8" />
       <module name="organization-service" target="1.8" />
+      <module name="serial" target="1.8" />
       <module name="springcloudinaction" target="1.6" />
       <module name="zuulsvr" target="1.8" />
     </bytecodeTargetLevel>
