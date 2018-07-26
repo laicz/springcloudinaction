@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/organization-service/pom.xml" />
         <option value="$PROJECT_DIR$/zuulsvr/pom.xml" />
         <option value="$PROJECT_DIR$/serial/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-source/pom.xml" />
       </list>
     </option>
   </component>
