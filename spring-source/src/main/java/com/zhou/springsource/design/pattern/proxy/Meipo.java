@@ -26,7 +26,8 @@ public class Meipo implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("代理执行了");
-        this.person.findLove();
+//        this.person.findLove();
+        method.invoke(this.person, args);
         System.out.println("代理执行完毕");
         return null;
     }
