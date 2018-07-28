@@ -2,7 +2,7 @@
  * Date:     2018/7/2523:17
  * AUTHOR:   Administrator
  */
-package com.zhou.springsource.design.pattern.proxy;
+package com.zhou.springsource.design.pattern.proxy.legacy;
 
 /**
  * 2018/7/25  23:17

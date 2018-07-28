@@ -2,7 +2,7 @@
  * Date:     2018/7/2523:20
  * AUTHOR:   Administrator
  */
-package com.zhou.springsource.design.pattern.proxy;
+package com.zhou.springsource.design.pattern.proxy.legacy;
 
 import sun.misc.ProxyGenerator;
 
@@ -13,7 +13,7 @@ import java.io.FileOutputStream;
  * created by zhoumb
  */
 public class ProxyTest {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Throwable {
 //        new Zhangsan().findLove();
         Person person = (Person) new Meipo().getInstance(new Zhangsan());
         person.findLove();

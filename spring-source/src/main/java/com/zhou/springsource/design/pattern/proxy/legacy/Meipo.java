@@ -2,7 +2,7 @@
  * Date:     2018/7/2523:21
  * AUTHOR:   Administrator
  */
-package com.zhou.springsource.design.pattern.proxy;
+package com.zhou.springsource.design.pattern.proxy.legacy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
