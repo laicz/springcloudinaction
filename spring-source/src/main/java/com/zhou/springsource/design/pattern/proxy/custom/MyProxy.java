@@ -40,12 +40,10 @@ public class MyProxy {
             StandardJavaFileManager standardFileManager = javaCompiler.getStandardFileManager(null, null, null);
             Iterable<? extends JavaFileObject> iterator = standardFileManager.getJavaFileObjects(f);
 
+            //将class文件中的对象  动态加载到jvm中
             JavaCompiler.CompilationTask task = javaCompiler.getTask(null, standardFileManager, null, null, null, iterator);
             task.call();
             standardFileManager.close();
-
-            //将class文件中的对象  动态加载到jvm中
-
 
             //返回被代理对象
             Class<?> proxyClass = classLoader.findClass("$Proxy0");
