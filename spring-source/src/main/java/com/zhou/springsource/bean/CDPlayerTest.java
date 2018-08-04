@@ -4,8 +4,6 @@
  */
 package com.zhou.springsource.bean;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +23,15 @@ public class CDPlayerTest {
     @Qualifier(value = "ipod")
     private CompactDisc compactDisc;
 
+    @Autowired
+    Cottage cottage;
+
     @Test
     public void cdShouldNotNUll(){
-        assertNotNull(compactDisc);
+        System.out.println(compactDisc);
         compactDisc.play();
+        cottage.sing();
+        cottage.sing2();
+
     }
 }
