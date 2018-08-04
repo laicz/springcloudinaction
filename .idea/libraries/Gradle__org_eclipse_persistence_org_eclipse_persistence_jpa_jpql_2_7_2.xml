@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.7.2">
+    <CLASSES>
+      <root url="jar://F:/environment/gradle/gradle-4.9-bin/gradle-4.9/tmp.gradle/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa.jpql/2.7.2/62690e43c963c508bca525b147d7f3f96ce3f534/org.eclipse.persistence.jpa.jpql-2.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/environment/gradle/gradle-4.9-bin/gradle-4.9/tmp.gradle/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa.jpql/2.7.2/24f85fa3e0958330c510422384c3bcdcab86a4b3/org.eclipse.persistence.jpa.jpql-2.7.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="F:/source/spring/spring-framework-master" />
+        <option name="modules">
+          <set>
+            <option value="F:/source/spring/spring-framework-master" />
+            <option value="F:/source/spring/spring-framework-master/buildSrc" />
+            <option value="F:/source/spring/spring-framework-master/spring-aop" />
+            <option value="F:/source/spring/spring-framework-master/spring-aspects" />
+            <option value="F:/source/spring/spring-framework-master/spring-beans" />
+            <option value="F:/source/spring/spring-framework-master/spring-context" />
+            <option value="F:/source/spring/spring-framework-master/spring-context-indexer" />
+            <option value="F:/source/spring/spring-framework-master/spring-context-support" />
+            <option value="F:/source/spring/spring-framework-master/spring-core" />
+            <option value="F:/source/spring/spring-framework-master/spring-expression" />
+            <option value="F:/source/spring/spring-framework-master/spring-framework-bom" />
+            <option value="F:/source/spring/spring-framework-master/spring-instrument" />
+            <option value="F:/source/spring/spring-framework-master/spring-jcl" />
+            <option value="F:/source/spring/spring-framework-master/spring-jdbc" />
+            <option value="F:/source/spring/spring-framework-master/spring-jms" />
+            <option value="F:/source/spring/spring-framework-master/spring-messaging" />
+            <option value="F:/source/spring/spring-framework-master/spring-orm" />
+            <option value="F:/source/spring/spring-framework-master/spring-oxm" />
+            <option value="F:/source/spring/spring-framework-master/spring-test" />
+            <option value="F:/source/spring/spring-framework-master/spring-tx" />
+            <option value="F:/source/spring/spring-framework-master/spring-web" />
+            <option value="F:/source/spring/spring-framework-master/spring-webflux" />
+            <option value="F:/source/spring/spring-framework-master/spring-webmvc" />
+            <option value="F:/source/spring/spring-framework-master/spring-websocket" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,10 @@
+使用上下文的方式
+AnnotationConfigApplicationContext
+AnnotationConfigWebApplicationContext
+ClassPathXmlApplicationContext
+FileSystemApplicationContext
+XmlWebApplicationContext
+
+①：在xml中进行显式的装配
+②：在java中进行显式的装配
+③：隐式的bean发现机制和自动装配
