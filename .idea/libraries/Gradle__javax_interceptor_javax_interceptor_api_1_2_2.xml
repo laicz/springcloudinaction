@@ -4,8 +4,6 @@
       <root url="jar://F:/environment/gradle/gradle-4.9-bin/gradle-4.9/tmp.gradle/caches/modules-2/files-2.1/javax.interceptor/javax.interceptor-api/1.2.2/b076d5887ff19f7311fd70cbe03fa3d3d8628a8e/javax.interceptor-api-1.2.2.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://F:/environment/gradle/gradle-4.9-bin/gradle-4.9/tmp.gradle/caches/modules-2/files-2.1/javax.interceptor/javax.interceptor-api/1.2.2/7798d0277ac712076ad4fa7b385cb8a49d50b7b/javax.interceptor-api-1.2.2-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

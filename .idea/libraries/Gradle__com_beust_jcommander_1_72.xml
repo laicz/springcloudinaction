@@ -4,8 +4,6 @@
       <root url="jar://F:/environment/gradle/gradle-4.9-bin/gradle-4.9/tmp.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.72/6375e521c1e11d6563d4f25a07ce124ccf8cd171/jcommander-1.72.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://F:/environment/gradle/gradle-4.9-bin/gradle-4.9/tmp.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.72/7ef123d5dfb6f839b41265648ff1be34982d50f8/jcommander-1.72-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

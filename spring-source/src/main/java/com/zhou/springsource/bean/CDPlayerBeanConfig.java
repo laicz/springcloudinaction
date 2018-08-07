@@ -5,6 +5,7 @@
 package com.zhou.springsource.bean;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -31,5 +32,11 @@ public class CDPlayerBeanConfig {
             return new IpodPeppers();
         }
         return null;
+    }
+
+    @Bean
+    @Conditional(CompactDiscCondition.class)
+    public CompactDisc getCompactDiscByCondition() {
+        return new SgtPeppers();
     }
 }
